@@ -47,8 +47,8 @@ def listwithzero(l):
 def get_longest_equal_int_real(lst: list[float]) -> list[float]:
     '''
     Determina cea mai lunga subsecventa de numere cu popr. ca toate au partea fractionara = partea intreaga
-    :param lst:
-    :return:
+    :param lst: lista cu numere reale
+    :return: cea mai lunga subsecventa cu proprietatea ca toate numerele au pi = pf
     '''
     subsecventamax = []
     for i in range(len(lst)):
