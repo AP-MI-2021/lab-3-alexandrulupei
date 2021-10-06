@@ -44,6 +44,7 @@ def listwithzero(l):
             return False
     return True
 
+
 def get_longest_equal_int_real(lst: list[float]) -> list[float]:
     '''
     Determina cea mai lunga subsecventa de numere cu popr. ca toate au partea fractionara = partea intreaga
