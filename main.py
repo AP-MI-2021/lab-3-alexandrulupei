@@ -77,6 +77,14 @@ def is_palindrome(n):
     else:
         return False
 
+
+def palindromelist(l):
+    for x in l:
+        if is_palindrome(x) is False:
+            return False
+    return True
+
+
 def  get_longest_all_palindromes(lst: list[int]) -> list[int]:
     '''
     Determina cea mai lunga subsecventa de numere cu popr. ca toate nr sunt palindrom
@@ -86,7 +94,7 @@ def  get_longest_all_palindromes(lst: list[int]) -> list[int]:
     subsecventamax = []
     for i in range(len(lst)):
         for j in range(i, len(lst)):
-            if is_palindrome(lst[i:j + 1]) and len(lst[i:j + 1]) > len(subsecventamax):
+            if palindromelist(lst[i:j + 1]) and len(lst[i:j + 1]) > len(subsecventamax):
                 subsecventamax = lst[i:j + 1]
     return subsecventamax
 
